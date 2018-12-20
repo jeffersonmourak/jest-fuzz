@@ -1,0 +1,27 @@
+{
+  "name": "jest-fuzz",
+  "version": "0.0.1",
+  "description": "Fuzz testing for jest",
+  "main": "index.js",
+  "repository": "git@github.com:jeffersonmourak/jest-fuzz.git",
+  "author": "Jefferson Oliveira <jeffersonmourak@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

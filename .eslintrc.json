@@ -1,0 +1,35 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "jest"
+    ],
+    "env": {
+        "node": true,
+        "es6": true,
+        "browser": true,
+        "jest/globals": true
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "no-bitwise": [
+            "error",
+            {
+                "allow": [
+                    "~"
+                ]
+            }
+        ],
+        "no-restricted-globals": [
+            "error",
+            "isNaN"
+        ],
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    }
+}
