@@ -3,8 +3,8 @@ const { int } = require('../helper/numbers');
 
 const defaultOptions = {
     length: 125,
-    append: '',
-    prepend: '',
+    sufix: '',
+    prefix: '',
 };
 
 function getString(random, length) {
@@ -20,5 +20,5 @@ module.exports = Fuzzer((random, options) => {
         ...options,
     };
 
-    return () => `${newOptions.append}${getString(random, newOptions.length)}${newOptions.prepend}`;
+    return () => `${newOptions.prefix}${getString(random, newOptions.length)}${newOptions.sufix}`;
 });
