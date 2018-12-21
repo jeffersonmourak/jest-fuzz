@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "jest": {
-    "verbose": true
+    "verbose": false
   },
   "devDependencies": {
     "eslint": "^5.10.0",

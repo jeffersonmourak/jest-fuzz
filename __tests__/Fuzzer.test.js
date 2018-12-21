@@ -12,7 +12,7 @@ test('create a valid fuction fuzzer', () => {
 test('create a valid object fuzzer', () => {
     const fakeGenerator = jest.fn(() => 'fuzz data');
 
-    expect(Fuzzer({ data: fakeGenerator })())
+    expect(Fuzzer({ data: fakeGenerator })()())
         .toEqual({
             data: 'fuzz data',
         });
