@@ -18,7 +18,7 @@ function Fuzzer(generator) {
         return options => generator(random, options);
 
     case 'object':
-        return objectGenerator(generator);
+        return () => objectGenerator(generator);
 
     default:
         throw new Error('Fuzzer cannot be loaded, it\'s not a function or an object');

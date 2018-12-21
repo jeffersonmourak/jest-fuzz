@@ -5,11 +5,11 @@ const intFuzzer = require('./int');
 const defaultOptions = {
     type: intFuzzer(),
     length: 300,
-    minLenght: 1,
+    minLength: 1,
 };
 
 function generateArray(random, options) {
-    const length = int(random, { min: options.minLenght, max: options.length });
+    const length = int(random, { min: options.minLength, max: options.length });
     const array = new Array(length).fill(0);
 
     return array.map(() => options.type());
@@ -21,8 +21,8 @@ module.exports = Fuzzer((random, options) => {
         ...options,
     };
 
-    if (newOptions.minLenght < 1) {
-        throw new Error('Array Fuzzer: The minimum lenght can\'t be less than 1');
+    if (newOptions.minLength < 1) {
+        throw new Error('Array Fuzzer: The minimum length can\'t be less than 1');
     }
 
     if (typeof newOptions.type !== 'function') {

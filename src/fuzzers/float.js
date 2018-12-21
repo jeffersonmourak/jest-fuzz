@@ -4,7 +4,6 @@ const { float } = require('../helper/numbers');
 const defaultOptions = {
     max: Infinity,
     min: -Infinity,
-    maxSafe: Number.MAX_SAFE_INTEGER,
 };
 
 module.exports = Fuzzer((random, options) => {
