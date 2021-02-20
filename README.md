@@ -52,7 +52,7 @@ these are the built-in fuzzers
 
 The custom fuzzer is a way to represent an object or other complex data.
 
-To create you simply need to use the `Fuzz.Fuzzer`
+To create you simply need to use the `Fuzz.Fuzzer` function
 
 ```javascript
 const exampleFuzzer = Fuzz.Fuzzer({
