@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "./build",
+    "resolveJsonModule": true,
+    "noImplicitAny": false
+  },
+  "include": ["./src"],
+  "exclude": []
+}

@@ -1,19 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 global.fuzz = global.fuzz || {};
-
 function fuzzTest(name, fuzzer, testRunner) {
     const iterations = global.fuzz.iterations || 100;
-
-    const testCase = index => {
+    const testCase = (index) => {
         test(`FUZZ-${index}`, () => {
-            testRunner(fuzzer())
-        })
+            testRunner(fuzzer());
+        });
     };
-
     describe(name, () => {
         for (let i = 0; i < iterations; i += 1) {
             testCase(i);
         }
     });
 }
-
-module.exports = fuzzTest;
+exports.default = fuzzTest;
