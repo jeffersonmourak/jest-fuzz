@@ -5,10 +5,10 @@
     "files": true
   },
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "./dist/esm",
     "resolveJsonModule": true,
     "noImplicitAny": false
   },
   "include": ["./src"],
-  "exclude": []
+  "exclude": ["**/*.spec.ts"]
 }
