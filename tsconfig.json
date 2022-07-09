@@ -5,7 +5,7 @@
     "files": true
   },
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./dist",
     "resolveJsonModule": true,
     "noImplicitAny": false
   },
