@@ -63,4 +63,8 @@ const exampleFuzzer = Fuzz.Fuzzer({
 Fuzz.test("My example", exampleFuzzer(), data => {
     // Test data.
 }
+
+Fuzz.it("My example", exampleFuzzer(), data => {
+    // Test data.
+}
 ```
