@@ -1,14 +1,15 @@
 # jest-fuzz
+
 Fuzz testing for jest
 
-# Installing
+## Installing
 
 use your favorite package manager
 
 `$ yarn add jest-fuzz`
 `$ npm install jest-fuzz`
 
-# Using
+## Using
 
 Import the test suite in your test code.
 
@@ -17,16 +18,20 @@ const Fuzz = require('jest-fuzz');
 
 ...
 ```
+
 ## Creating a test
+
 First of all, you need to use the `Fuzz.test` instead of Jest's `test` and what's the difference?
-Basically `Fuzz.test` create a wrap to all random data that it will generate for your code. 
+Basically `Fuzz.test` create a wrap to all random data that it will generate for your code.
 
 Now, this is how a test has to will be described.
+
 ```javascript
 Fuzz.test("Name", Fuzzer, (data) => {
-	//expectations
+ //expectations
 }
 ```
+
 where,
 
 - Name -> String representing the name of this suite
@@ -34,6 +39,7 @@ where,
 - Callback (data) -> This callback is where your tests will be, and the data param is a random data to your test.
 
 ## Fuzzers
+
 Fuzzers are the data representation of what you need to test.
 
 for example, if you have a function that needs a string, you can use `Fuzz.string()` also, pass the parameters for this string.
