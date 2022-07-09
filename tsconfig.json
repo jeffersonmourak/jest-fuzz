@@ -6,8 +6,11 @@
   },
   "compilerOptions": {
     "outDir": "./dist/esm",
+    "declarationDir": "./dist/types",
     "resolveJsonModule": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "declaration": true,
+    "esModuleInterop": true
   },
   "include": ["./src"],
   "exclude": ["**/*.spec.ts"]

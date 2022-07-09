@@ -7,7 +7,7 @@ const defaultOptions = {
   prefix: '',
 };
 
-interface StringFuzzerOptions {
+export interface StringFuzzerOptions {
   length: number;
   prefix: string;
   sufix: string;
