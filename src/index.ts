@@ -4,6 +4,7 @@ import Fuzzer from './Fuzzer';
 
 const jestFuzz = {
   test,
+  it: test,
   Fuzzer,
   ...fuzzers,
 };
