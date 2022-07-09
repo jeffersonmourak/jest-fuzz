@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+  "compilerOptions": {
+    "outDir": "./dist/esm",
+    "resolveJsonModule": true,
+    "noImplicitAny": false
+  },
+  "include": ["./src"],
+  "exclude": ["**/*.spec.ts"]
+}
